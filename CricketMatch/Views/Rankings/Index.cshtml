@@ -4,7 +4,7 @@
     ViewData["Title"] = "Ranking";
 }
 
-<h1>Index</h1>
+<h1>Ranking</h1>
 
 <p>
     <a asp-action="Create">Add Ranks</a>
@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Player.PlayerID)
+                @Html.DisplayFor(modelItem => item.Player.PlayerFname)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Event.EventID)
+                @Html.DisplayFor(modelItem => item.Event.Eventname)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
